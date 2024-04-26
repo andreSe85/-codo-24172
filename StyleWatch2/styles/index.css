@@ -36,7 +36,7 @@ nav ul li a {
 
 .banner {
     background-image: url("banner.jpg");
-    background-size: cover;
+    background-size: 100% 20%;
     background-position: center;
     height: 400px;
     text-align: center;
