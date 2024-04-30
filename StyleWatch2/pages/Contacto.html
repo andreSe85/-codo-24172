@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - StyleWatch</title>
+    <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/contacto.css">
 </head>
 <body>
@@ -33,7 +34,7 @@
         <section class="formulario">
             <h2>Formulario de Contacto</h2>
             <form id="contactForm">
-                <div>
+                 <div>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
                 </div>
@@ -54,12 +55,14 @@
                         <option value="sugerencia">Sugerencia</option>
                     </select>
                 </div>
-                <div>
+                <div class="Preferencias-contacto">
                     <label>Preferencias de contacto:</label>
+                    <div class="opciones-contacto">
                     <input type="checkbox" id="prefEmail" name="prefContacto" value="email">
                     <label for="prefEmail">Email</label>
                     <input type="checkbox" id="prefTelefono" name="prefContacto" value="telefono">
                     <label for="prefTelefono">Teléfono</label>
+                    </div>
                 </div>
                 <div>
                     <label for="mensaje">Mensaje:</label>
@@ -69,7 +72,10 @@
                     <label for="imagen">Adjuntar imagen:</label>
                     <input type="file" id="imagen" name="imagen">
                 </div>
-                <button type="submit">Enviar</button>
+                <div class="botones">
+                    <input class="button" type="reset" value="Limpiar formulario">
+                    <input class="button" type="submit" value="Enviar">
+                </div>
             </form>
         </section>
     </main>
