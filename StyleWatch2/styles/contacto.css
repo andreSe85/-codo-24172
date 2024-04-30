@@ -49,3 +49,31 @@
     color: white;
     cursor: pointer;
 }
+
+/* Media queries para tablet */
+@media only screen and (max-width: 1023px) {
+    .formulario {
+        width: 70%;
+        margin: 7%;
+    }
+
+    .formulario .botones input[type="reset"],
+    .formulario .botones input[type="submit"],
+    .formulario select {
+        margin-right: 20px;
+    }
+}
+
+/* Media queries para celular */
+@media only screen and (max-width: 767px) {
+    .formulario {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .formulario .botones input[type="reset"],
+    .formulario .botones input[type="submit"],
+    .formulario select {
+        margin-right: 10px;
+    }
+}
