@@ -91,7 +91,10 @@ nav ul li a {
     height: auto;
 
 }
-
+.marca:hover {
+    transform: rotateY(360deg); /* Rota 360 grados horizontalmente al pasar el mouse */
+    transition: transform 0.9s ease;
+}
 .productos {
     padding: 20px;
 }
