@@ -12,19 +12,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Validar que los campos obligatorios no estén vacíos
         if (nombre === "" || email === "" || motivo === "" || mensaje === "") {
-            alert("Por favor, completa todos los campos obligatorios.");
             return;
         }
 
         // Validar el formato del email utilizando una expresión regular simple
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailRegex.test(email)) {
-            alert("Por favor, ingresa un email válido.");
+        if (!emailRegex.test(email)){
             return;
         }
 
         // Si todos los campos son válidos, enviar el formulario (aquí puedes agregar el código para enviar el formulario a tu backend si lo tienes)
-        alert("¡Formulario enviado correctamente!");
+        alert ("Formulario enviado correctamente. Muchas Gracias.");
         form.reset(); // Limpiar el formulario después de enviarlo
     });
 });
